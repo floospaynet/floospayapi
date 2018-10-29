@@ -1,0 +1,26 @@
+{
+    "name": "floospaynet/floospayapi",
+    "description": "floospay payment api service provider",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "floospaynet",
+            "email": "developer@floospay.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FloospayNet\\FloospayAPIs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FloospayNet\\FloospayAPIs\\FloospayApiServiceProvider"
+            ]
+        }
+    }
+}
