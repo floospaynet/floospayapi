@@ -9,9 +9,10 @@
             "email": "developer@floospay.net"
         }
     ],
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "require": {},
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=5.6.*"
+    },
     "autoload": {
         "psr-4": {
             "FloospayNet\\FloospayAPIs\\": "src/"
