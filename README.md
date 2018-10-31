@@ -1,5 +1,8 @@
 # floospay-api
 ## Floospay Payment API Service Provider
+```shell 
+composer require floospaynet/floospayapi
+```
 Floospay Laravel PHP Library
 =====================
 
