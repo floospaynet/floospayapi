@@ -14,9 +14,9 @@ abstract class FloospayApi
         self::$sid = $sid;
         self::$privateKey = $privateKey;
         if ($mode == 'sandbox') {
-            self::$apiUrl = 'https://sandbox.floospay.com/checkout/api/v1/charge';
+            self::$apiUrl = 'https://checkout.floospay.net/api/charge/create';
         } else {
-            self::$apiUrl = 'https://checkout.floospay.com/api/v1/charge';
+            self::$apiUrl = 'https://checkout.floospay.net/api/charge/create';
         }
     }
 }
