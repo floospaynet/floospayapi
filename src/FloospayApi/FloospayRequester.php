@@ -27,7 +27,7 @@ class Floospay_Requester
         $resp = curl_exec($ch);
         curl_close($ch);
         if ($resp === FALSE) {
-            throw new Floospay_Error("cURL call failed", "403");
+            throw new Floospay_Error("cURL call failed url=".$url." data=".$data, "403");
         } else {
             return $resp;
         }
