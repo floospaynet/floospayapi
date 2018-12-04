@@ -12,7 +12,7 @@ class Floospay_Util
 
     public static function objectToArray($object)
     {
-        $object = json_decode($object, true);
+        $object = json_decode($object, false);
         $array=array();
         foreach($object as $member=>$data)
         {
