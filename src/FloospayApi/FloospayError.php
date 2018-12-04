@@ -1,7 +1,7 @@
 <?php
 namespace FloospayNet\FloospayAPIs;
 
-class Floospay_Error extends Exception
+class Floospay_Error extends \Exception
 {
     public function __construct($message, $code)
     {
