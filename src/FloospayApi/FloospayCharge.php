@@ -4,7 +4,7 @@ namespace FloospayNet\FloospayAPIs;
 class Floospay_Charge extends FloospayApi
 {
 
-    public static function auth($params=array())
+    public static function auth($params=array(),$type='array')
     {
         $request = new Floospay_Requester();
         $result = $request->do_call($params);
