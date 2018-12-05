@@ -15,7 +15,7 @@ class Floospay_Requester
     {
         $data['privateKey'] = $this->privateKey;
         $data = json_encode($data);
-        $header = array("content-type:application/JSON","content-length:".strlen($data));
+        $header = array("content-type:application/json","content-length:".strlen($data));
         $url = $this->apiUrl;
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
