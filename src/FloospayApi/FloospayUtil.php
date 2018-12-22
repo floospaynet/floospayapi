@@ -28,7 +28,7 @@ class Floospay_Util
     public static function checkError($contents)
     {
         if (isset($contents['exception'])) {
-            throw new Floospay_Error($contents['exception']['errorMsg'], $contents['exception']['errorCode']);
+            throw new Floospay_Error($contents['exception']['errorMsg'], intval($contents['exception']['errorCode']));
         }
     }
 
