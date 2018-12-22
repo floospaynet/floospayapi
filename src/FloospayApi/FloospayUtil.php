@@ -15,9 +15,12 @@ class Floospay_Util
         
         $object = json_decode($object, true);
         $array=array();
-        foreach(@$object as $member=>$data)
-        {
-            $array[$member]=$data;
+        if ($object && (is_array($object) || is_object($object))) {
+            foreach(@$object as $member=>$data)
+            {
+                $array[$member]=$data;
+            }
+           
         }
         return $array;
     }
